@@ -6,7 +6,7 @@ A docker image for pacparser.
 
 1. command-line
 ```
-curl -s http://proxy.site.internal/proxy.pac | pactester -p - -u http://example.com
+curl -s http://proxy.site.internal/proxy.pac | docker run --rm -i bennettp123/pacparser pactester -p - -u http://example.com
 ```
 
 2. python
