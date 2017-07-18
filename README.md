@@ -12,7 +12,7 @@ curl -s http://proxy.site.internal/proxy.pac | docker run --rm -i bennettp123/pa
 2. python
 ```
 import pacparser
-pacparserr.init()
+pacparser.init()
 pacparser.just_find_proxy(pacfile='/path/to/pacfile', url='http://example.com')
 pacparser.cleanup()
 ```
