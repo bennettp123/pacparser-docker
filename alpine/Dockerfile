@@ -13,7 +13,7 @@ RUN apk add --no-cache \
              cat /tmp/*.patch | patch -p1 && \
              cd src && \
              make && \
-             make install \
+             make install' \
  && rm -rf pacparser* /tmp/*.patch
 CMD /bin/sh
 
