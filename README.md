@@ -2,6 +2,12 @@
 
 A docker image for pacparser.
 
+# Quickstart
+
+```
+docker run --rm -it bennettp123/pacparser:alpine pactester --help
+```
+
 # Examples
 
 1. command-line
