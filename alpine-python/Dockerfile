@@ -18,6 +18,12 @@ RUN apk add --no-cache \
              make install && \
              make pymod && \
              make install-pymod' \
+ && apk del --purge \
+        build-base \
+        ca-certificates \
+        make \
+        python-dev \
+        openssl \
+        wget \
  && rm -rf pacparser* /tmp/*.patch
 CMD /bin/sh
-
